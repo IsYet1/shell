@@ -1,0 +1,23 @@
+export PATH=/opt/homebrew/opt/ruby/bin:/opt/homebrew/lib/ruby/gems/3.0.0/bin:/opt/homebrew/lib/ruby/gems/3.0.0/bin/pod:/opt/homebrew/bin:$PATH
+# export PATH=$PATH:/opt/homebrew/bin
+[[ -s $HOME/.nvm/nvm.sh ]] && . $HOME/.nvm/nvm.sh  # This loads NVM
+
+# Enable vi mode
+bindkey -v
+PROMPT=$'************************************************************************************************************************************ %* \n%~:%# '
+
+alias ll='ls -l'
+alias la='ls -a'
+alias lla='ls -l -a'
+# Place-holder for ld until I add the required library.
+alias ld='ls -l -a'
+
+alias goiw2='cd ~/dev/iw2/pack/ ; ll'
+alias goios='cd ~/dev/iOS/Udemy/Firebase/HelloFirebase/ ; ll'
+
+alias pe='printenv'
+alias pepath='printenv PATH'
+alias peaws='printenv | grep AW'
+
+alias reload='source ~/.zshrc'
+alias edrc='vim ~/.zshrc'
